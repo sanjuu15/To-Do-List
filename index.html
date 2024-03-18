@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css/">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-image: url('images/bgtodo.jpg');
+            }
+        </style>
+    </head>
+    <body>
+        <centre>
+            <details>
+                This is done by Sanju, we can schedule our to do list Here.
+            </details>
+        </centre>
+        <section class="container">
+            <div class="heading">
+                <image class="heading_img" src="images/icon.jpeg"></image>
+                <h1 class="heading_title">To-Do List</h1>
+            </div>
+            <form class="form">
+                <div>
+                    <label class="form_label" for="todo">~ Today I want to ~</label><br>
+                    <input class="form__input" type="text" id="todo" name="to-do" size="30" required>
+                    <button class="button"><span>Submit</span></button>
+                </div>
+            </form>
+            <div>
+                <ul class="toDoList"></ul>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
