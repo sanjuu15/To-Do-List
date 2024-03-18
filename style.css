@@ -1,0 +1,126 @@
+body{
+    background-color: #a39bd2;
+    min-height: 70vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #494a4b;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 130%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #e0e0e0;
+    }
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+    background: #f1f5f8;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .heading {
+    position: relative;
+    text-align: center; /* Horizontally center-align text */
+    margin-bottom: 1rem; /* Add space below the heading */
+  }
+  
+  .heading__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .heading__title {
+    font-size: calc(1rem + 1vw);
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .heading__title {
+      font-size: 2rem;
+    }
+  }
+  
+  .heading__img {
+    width: 24%;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .heading__img {
+      width: auto; 
+      max-width: 24%; 
+    }
+  }
+  
+  .form__input:focus {
+    outline: none;
+    border: solid 3px #ea95e0;
+  }
+  
+  .form__input {
+    width: 70%;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .form__input {
+      width: 60%;
+    }
+  }
+  
+  .button {
+    padding: 0;
+    border: none;
+    transform: rotate(4deg);
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-image: url("Images/bgtodo.jpg");
+    background-color: rgba(0, 255, 196, 0.7);
+  }
+  
+  .button span {
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+  }
+  
+  .button:active, .button:focus {
+    transform: translateY(4px);
+    padding-bottom: 0px;
+    outline: 0;
+  }
+  .toDoList {
+    text-align: left;
+  }
+  .toDoList li {
+    position: relative;
+    padding: 0.5rem;
+  }
+  .toDoList li:hover {
+    text-decoration: line-through wavy #24bffb;
+  }
